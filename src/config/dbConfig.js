@@ -1,6 +1,6 @@
 const mongoose=require("mongoose")
 const serverConfig=require("./serverConfig")
-
+// the below function is used to connect db
 async function connectDB(){
     try{
         await mongoose.connect(serverConfig.DB_URL)
