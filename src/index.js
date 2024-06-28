@@ -6,7 +6,7 @@ const app=express();
 
 app.use(bodyParser.json())
 app.use(bodyParser.text())
-app.use(bodyParser.urlencoded())
+app.use(bodyParser.urlencoded({extended:true}))
 
 app.post('/ping',(req,res)=>{
     console.log(req.body)
